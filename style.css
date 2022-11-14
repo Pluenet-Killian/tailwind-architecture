@@ -1,0 +1,146 @@
+*, ::after, ::before {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: rgb(167, 167, 167);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+}
+
+.liste-nav {
+    display: flex;
+    align-items: center;
+}
+
+.item-nav {
+    margin: 20px;
+    font-size: 13px;
+}
+
+.item-nav:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.read-more {
+    margin-top: 50px;
+}
+
+.arrow {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.box-pill1 {
+    width: 60%;
+    height: 150px;
+    border-radius: 26% 25% 25% 26% / 50% 50% 50% 50%;
+    background-color: green;
+}
+
+.box-pill2 {
+    width: 30%;
+    height: 150px;
+    border-radius: 51% 49% 44% 51% / 26% 26% 26% 26%;
+    background-color: green;
+}
+
+@media screen and (min-width: 1000px) {
+    .box-pill1 {
+        width: 50%;
+        height: 200px;
+        border-radius: 26% 25% 25% 26% / 50% 50% 50% 50%;
+        background-color: green;
+    }
+    
+    .box-pill2 {
+        width: 25%;
+        height: 190px;
+        margin-left: 40px;
+        border-radius: 51% 49% 44% 51% / 26% 26% 26% 26%;
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .box-pill1 {
+        width: 50%;
+        height: 200px;
+        border-radius: 26% 25% 25% 26% / 50% 50% 50% 50%;
+        background-color: green;
+    }
+    
+    .box-pill2 {
+        width: 25%;
+        height: 190px;
+        margin-left: 40px;
+        border-radius: 51% 49% 44% 51% / 26% 26% 26% 26%;
+        background-color: green;
+    }
+}
+
+
+
+.stats {
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.bond {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    align-items: center;
+}
+
+.contain-boxes {
+    gap: 10px;
+}
+
+.boxes {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 80px;
+}
+
+.boxes:nth-child(2) {
+    height: 300px;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    top: 35px;
+    left: -10px;
+}
